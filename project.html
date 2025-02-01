@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(122.webp);
+            background-size: cover;
+        }
+        .login {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .login h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        .login input::placeholder{
+            color: rgb(9, 154, 173);
+        }
+        .login input[type="text"],
+        .login input[type="password"] {
+            width: 280px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #0b0707;
+            border-radius: 4px;
+            
+        }
+     
+            
+        .login input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(21, 78, 104);
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login input[type="submit"]:hover {
+            background-color: #07b9fa;
+        }
+        .a{
+            color: rgb(21, 78, 104);
+            text-align: center;
+            margin-left: 90px;
+        }
+        img{
+            height: 80px;
+            width: 140px;
+            margin-left: 75px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <img src="outlook.png">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required placeholder="Enter Username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password">
+
+            <input type="submit" value="Login">
+            <a href="#" class="a">Forgot Password?</a>
+        </form>
+    </div>
+</body>
+</html>
